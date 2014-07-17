@@ -1,7 +1,7 @@
 farm_game
 =========
 
-* Python School Project (educational)
+##Python School Project (educational)
 
 I'm following the course at Python School -- http://www.pythonschool.net/
 The real project I want to build is an interface for reporting on data in
