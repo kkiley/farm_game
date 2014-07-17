@@ -160,11 +160,11 @@ def manage_crop(crop):
     print("Thank you for using the crop management program")
 
 
-def main():
-    """
-    Work with a crop
-    """
-    new_crop = Crop(1, 4, 3)
-    manage_crop(new_crop)
-
-main()
+# def main():
+# """
+#     Work with a crop
+#     """
+#     new_crop = Crop(1, 4, 3)
+#     manage_crop(new_crop)
+#
+# main()
