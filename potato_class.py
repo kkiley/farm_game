@@ -1,12 +1,11 @@
-"""
-
-"""
 __author__ = 'Kor'
+
 from crop_class import *
 
 class Potato(Crop):
     """
     A potato crop
+    Child of Crop class
     """
     # constructor
     def __init__(self):

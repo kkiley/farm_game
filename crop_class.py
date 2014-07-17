@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 13 15:28:20 2014
-
-@author: Kor
-
-
-"""
+__author__ = 'Kor'
 import random
 
 class Crop:
