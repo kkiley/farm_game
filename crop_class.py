@@ -22,7 +22,7 @@ class Crop:
 
     def needs(self):
         """return a dictionary containing light and water needs"""
-        return {'light need': self._light_need, 'water_need': self._water_need}
+        return {'light need': self._light_need, 'water need': self._water_need}
 
     # method to provide information about the current state of the crop
     def report(self):
@@ -106,7 +106,6 @@ def manual_grow(crop):
 def display_menu():
     """
     display manage crop test menu
-    :param self:
     """
     print("1. Grow manually over 1 day")
     print("2. Grow automatically over 30 days")
