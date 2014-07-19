@@ -60,8 +60,8 @@ class Animal:
         :return: Update status of the animal depending on the amount of growth
         """
         if self._growth > 1440:
-            self._status = "Old"
-        elif self._growth >= 730:
+            self._status = "Mature"
+        elif self._growth >= 720:
             self._status = "2 year old"
         elif self._growth >= 360:
             self._status = "Yearling"
@@ -74,7 +74,7 @@ class Animal:
         """
         :param food:
         :param water:
-        Updates parameters showing growth which dpends on the amount of food
+        Updates parameters showing growth which depends on the amount of food
         and water given to the animal
         """
         if food >= self._food_need and water >= self._water_need:
@@ -95,8 +95,8 @@ def auto_grow(animal, days):
     """
 
     for day in range(days):
-        food = random.randint(1, 10)
-        water = random.randint(1, 10)
+        food = random.randint(5, 10)
+        water = random.randint(5, 10)
         animal.grow(food, water)
 
 
