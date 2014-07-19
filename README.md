@@ -20,3 +20,6 @@ From there, you are introduced to OOP, an area that I have only dabbled in
 very superficially. When I think about it, I think the use of classes poly-
 morphically should be ideal for developing the various queries and reports
 I plan to develop for my application.
+
+
+
