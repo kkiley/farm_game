@@ -1,11 +1,13 @@
+"""
 __author__ = 'Kor'
+"""
 import random
 
-class Crop:
 
+class Crop:
     """A generic food crop"""
 
-    #constructor
+    # constructor
 
     def __init__(self, growth_rate, light_need, water_need):
         """
@@ -30,7 +32,7 @@ class Crop:
         return a dictionary containing the type, status, growth and days
         growing
         """
-        return {'type': self._type, 'status':self._status,
+        return {'type': self._type, 'status': self._status,
                 'growth': self._growth, 'days growing': self._days_growing}
 
     def _update_status(self):
@@ -61,7 +63,6 @@ class Crop:
         self._update_status()
 
 
-
 def auto_grow(crop, days):
     """
     grow the crop
@@ -71,6 +72,7 @@ def auto_grow(crop, days):
         light = random.randint(1, 10)
         water = random.randint(1, 10)
         crop.grow(light, water)
+
 
 def manual_grow(crop):
     """
@@ -103,6 +105,7 @@ def manual_grow(crop):
     # grow the crop
     crop.grow(light, water)
 
+
 def display_menu():
     """
     display manage crop test menu
@@ -113,6 +116,7 @@ def display_menu():
     print("0. Exit test program")
     print()
     print("Please select option from the above menu")
+
 
 def get_menu_choice():
     """
@@ -131,6 +135,7 @@ def get_menu_choice():
         except ValueError:
             print("Please enter a valid option")
     return choice
+
 
 def manage_crop(crop):
     """
@@ -161,7 +166,7 @@ def manage_crop(crop):
 
 # def main():
 # """
-#     Work with a crop
+# Work with a crop
 #     """
 #     new_crop = Crop(1, 4, 3)
 #     manage_crop(new_crop)
