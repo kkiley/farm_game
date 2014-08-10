@@ -1,4 +1,6 @@
-__author__ = 'Kor'
+"""
+This is a test
+"""
 
 from animal_class import *
 
