@@ -37,7 +37,7 @@ class Animal:
         self._growth_rate = growth_rate
         self._food_need = food_need
         self._water_need = water_need
-        self._status = "Embryo"
+        self._status = "New Born"
         self._type = "Generic"
 
     def needs(self):
@@ -65,8 +65,8 @@ class Animal:
             self._status = "2 year old"
         elif self._growth >= 360:
             self._status = "Yearling"
-        elif self._growth >= 180:
-            self._status = "6 Month Old"
+        elif self._growth >= 7:
+            self._status = "Calf"
         elif self._growth > 0:
             self._status = "Newborn"
 
@@ -200,4 +200,5 @@ def main():
     manage_animal(new_animal)
 
 
-main()
+if __name__ == "__main__":
+    main()
