@@ -7,11 +7,16 @@ import random
 class Crop:
     """A generic food crop"""
 
-    # constructor
+    # constructor -- set the initial values for each instance
 
     def __init__(self, growth_rate, light_need, water_need):
         """
         set the attributes with an initial value
+        the _ makes the attributes private which means that if a programmer uses
+        your class, he should not access those attributes directly but through
+        its public interface, i.e. the methods that you make available in your
+        class. The process of hiding information in that way is called encapsul-
+        ation.
         """
 
         self._growth = 0
@@ -166,13 +171,13 @@ def manage_crop(crop):
 
 def main():
     """
-
-    :rtype : object
-    """"""
 Work with a crop
     """
     new_crop = Crop(1, 4, 3)
     manage_crop(new_crop)
+    # print(new_crop._status)
+    # print(new_crop._light_need)
+    # print(new_crop._water_need)
 
 
 if __name__ == "__main__":
